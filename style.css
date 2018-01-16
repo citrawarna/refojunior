@@ -1,0 +1,102 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Mukta Vaani', sans-serif;
+}
+
+
+
+.bg {
+    /* The image used */
+    background-image: url("carousel.jpg");
+
+    /* Full height */
+    width: 100%;
+    /* Center and scale the image nicely */
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    color: white;
+
+}
+
+.relative {
+    position: relative;
+}
+
+.content-skills {
+    position: absolute;
+    color:white;
+
+}
+
+
+.fit {
+    padding-top:70px; position:relative
+}
+
+h1{
+    font-family: 'PT Sans', sans-serif;
+}
+
+h2{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.fit p {
+    font-family: 'Mukta Vaani', sans-serif;
+}
+
+.text-home {
+    text-align: justify;
+
+}
+
+@media only screen and (min-width: 360px) {
+    /* For phone: */
+    .box-home-m {
+        position: absolute;
+        top: 30%;
+        right: 5%;
+        color:black;
+        width: 90%;
+        height: auto;
+        background-color: white;
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .box-home-t {
+        position: absolute;
+        top: 30%;
+        right: 17%;
+        color:black;
+        width: 70%;
+        height: auto;
+        background-color: white;
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 790px) {
+    /* For desktop: */
+    .box-home {
+        position: absolute;
+        top: 40%;
+        right: 30px;
+        color:black;
+        width: 40%;
+        height: auto;
+        background-color: white;
+        padding: 15px;
+    }
+}
