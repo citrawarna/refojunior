@@ -59,6 +59,20 @@ h2{
 
 }
 
+@media only screen and (min-width: 320px) {
+    /* For phone: */
+    .box-home-m {
+        position: absolute;
+        top: 30%;
+        right: 0;
+        color:black;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        padding: 5px;
+    }
+}
+
 @media only screen and (min-width: 360px) {
     /* For phone: */
     .box-home-m {
