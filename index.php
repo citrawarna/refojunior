@@ -58,36 +58,8 @@
 		</div>
 	</div>
 	<br><br>
-	
-	<div class="row justify-content-md-center">
-		<h1>Simple About Me</h1>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 col-sm-6 col-lg-6">
-				<img src="img/me.jpg" class="img-thumbnail" alt="">
-			</div>
-			<div class="col-md-6 col-sm-6 col-lg-6">
-				wkwkw
-			</div>
-		</div>
-	</div>
-	<br><br>
 
-	<div class="row justify-content-md-center">
-		<h1>My Skills</h1>
-	</div>
-	<div class="row relative">
-		<img src="img/skills.jpg" class="bg" width="100%" height="500px" alt="">
-		<div class="content-skills">
-			<h2>HTML</h2>
-		</div>
-		
-	</div>
-	<br><br>
-
-
-	<div class="row justify-content-md-center">
+	<div class="row justify-content-center">
 		<h1>My Porfolio</h1>
 	</div>
 	<div class="container">
@@ -115,8 +87,116 @@
 			</div>
 		</div>
 	</div>
+	<br><br>
 	
+	<div class="row relative">
+		<div class="skills">
+			<div class="container">
+				<br>
+				<div class="row justify-content-center">
+					<h1>My Skills</h1>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<h2>HTML</h2>
+						<div class="progress">
+						  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h2>CSS</h2>
+						<div class="progress">
+						  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+						</div>
+					</div>	
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<h2>PHP</h2>
+						<div class="progress">
+						  <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h2>Javascript</h2>
+						<div class="progress">
+						  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+						</div>
+					</div>	
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<h2>Multimedia</h2>
+						<div class="progress">
+						  <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h2>Hardware and Networking</h2>
+						<div class="progress">
+						  <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+						</div>
+					</div>	
+				</div>
+				<br><br>
+				<div class="row justify-content-center">
+					<p>i will always practice and learning about this, because this is my passion</p>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<br><br>
 
+	<div class="row justify-content-center">
+		<h1>Recent Blog</h1>
+	</div>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-lg-4">
+				<div class="blog">
+					<h2>Tips Sukses Interview</h2>
+					<img src="img/blog-1.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam facilis molestiae deleniti accusantium earum eligendi...</p>
+					&nbsp;&nbsp;
+					<a href="#" class="btn btn-primary">Read More</a>
+				</div>
+				<br>		
+			</div>
+			<div class="col-md-4 col-sm-4 col-lg-4">
+				<div class="blog">
+					<h2>Tips Sukses Interview</h2>
+					<img src="img/blog-1.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam facilis molestiae deleniti accusantium earum eligendi...</p>
+					&nbsp;&nbsp;
+					<a href="#" class="btn btn-primary">Read More</a>
+				</div>
+				<br>		
+			</div>
+			<div class="col-md-4 col-sm-4 col-lg-4">
+				<div class="blog">
+					<h2>Tips Sukses Interview</h2>
+					<img src="img/blog-1.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam facilis molestiae deleniti accusantium earum eligendi...</p>
+					&nbsp;&nbsp;
+					<a href="#" class="btn btn-primary">Read More</a>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<br><br>
+
+	<!-- lanjut besok bos -->
+	<div class="row relative">
+		<div class="overlay"></div>
+		<img src="img/contact.jpg" class="bg-contact" alt="">
+		
+	</div>
+
+	
 	
 	
 
