@@ -48,9 +48,10 @@
 		<div class="row fit">
 			<div class="container fit-blog">
 				<br>
-				<div class="row" style="margin-left:20px">
+				<div class="row sub">
 					<h1>Tips Sukses Interview</h1>
 				</div>
+				<p class="sub">17-01-2017</p>
 				<hr>
 				<div class="row">
 					<div class="col-md-8  col-lg-8">
@@ -60,6 +61,8 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, modi, autem error pariatur consectetur quasi laborum delectus nisi ullam veritatis itaque mollitia eligendi sapiente iusto obcaecati eos reprehenderit nobis hic.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, modi, autem error pariatur consectetur quasi laborum delectus nisi ullam veritatis itaque mollitia eligendi sapiente iusto obcaecati eos reprehenderit nobis hic.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, modi, autem error pariatur consectetur quasi laborum delectus nisi ullam veritatis itaque mollitia eligendi sapiente iusto obcaecati eos reprehenderit nobis hic.</p>
+						Artikel Kategori : 
+						<p class="category"><a href="#">Tips And Trick</a></p>
 						<div id="disqus_thread"></div>
 							<script>
 

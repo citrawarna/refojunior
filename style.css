@@ -308,3 +308,19 @@ h2{
 .list-article {
     padding-top:5px; padding-bottom:5px;
 }
+
+.sub {
+    margin-left: 20px;
+}
+
+.category a{
+    background-color: grey;
+    color:white;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.category a:hover {
+    text-decoration: none;
+    background-color: #0f005d;
+}
