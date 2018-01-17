@@ -60,30 +60,45 @@
 	<br><br>
 
 	<div class="row justify-content-center">
-		<h1>My Porfolio</h1>
+		<h1>My Portfolio</h1>
 	</div>
 	<div class="container">
 		<div class="row">	
 			<div class="col-md-4 col-sm-4 col-lg-4">
-				<img src="img/1.jpg" class="img-thumbnail" alt="">
+				<a href="#">
+					<img src="img/port-1.jpg" class="img-thumbnail" alt="">
+					<h4>Aplikasi Orderan Khusus Berbasis Web untuk Perusahaan</h4>
+				</a>
 			</div>
 			<div class="col-md-4 col-sm-4 col-lg-4">
-				<img src="img/2.jpg" class="img-thumbnail" alt="">
+				<a href="#">
+					<img src="img/port-2.jpg" class="img-thumbnail" alt="">
+					<h4>Aplikasi Perpustakaan Berbasis Web</h4>
+				</a>
 			</div>
 			<div class="col-md-4 col-sm-4 col-lg-4">
-				<img src="img/3.jpg" class="img-thumbnail" alt="">
+				<a href="#">
+					<img src="img/port-3.jpg" class="img-thumbnail" alt="">
+					<h4>Aplikasi Lamar Kerja Online Berbasis Web Untuk Perusahaan</h4>
+				</a>
 			</div>
 		</div>
 		<br>
 		<div class="row">	
 			<div class="col-md-4 col-sm-4 col-lg-4">
-				<img src="img/1.jpg" class="img-thumbnail" alt="">
+				<a href="#">
+					<img src="img/port-4.jpg" class="img-thumbnail" alt="">
+					<h4>Website Dinamis Bali Massive Shuffle</h4>
+				</a>
 			</div>
 			<div class="col-md-4 col-sm-4 col-lg-4">
-				<img src="img/2.jpg" class="img-thumbnail" alt="">
+				<a href="#">
+					<img src="img/port-5.jpg" class="img-thumbnail" alt="">
+					<h4>Website Dinamis Creavi Media</h4>
+				</a>
 			</div>
 			<div class="col-md-4 col-sm-4 col-lg-4">
-				<img src="img/3.jpg" class="img-thumbnail" alt="">
+				<img src="img/soon.jpg" class="img-thumbnail" alt="">
 			</div>
 		</div>
 	</div>
@@ -151,7 +166,7 @@
 	<br><br>
 
 	<div class="row justify-content-center">
-		<h1>Recent Blog</h1>
+		<h1>Recent Articles</h1>
 	</div>
 	<br>
 	<div class="container">
@@ -186,21 +201,95 @@
 				</div>		
 			</div>
 		</div>
+		<div class="row justify-content-center">
+			<h4><a href="#">See More Articles</a></h4>
+		</div>
 	</div>
 	<br><br>
 
-	<!-- lanjut besok bos -->
-	<div class="row relative">
-		<div class="overlay"></div>
-		<img src="img/contact.jpg" class="bg-contact" alt="">
+	<!-- contact -->
+	<div class="row">
+		<div class="container-fluid">
+		    <div class="row" id="contact">
+				<img src="img/contact2.jpg" class="img-contact" alt="bg-img">
+				<div class="col-lg-12 col-md-12 col-xs-12 absolute" >
+				      <br>
+				      <div class="row justify-content-center">
+				      	<h1 style="color:black; background:white">Contact Me</h1> 
+				      </div>
 		
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-xs-6">
+							<div class="address">
+		                        <div class="address-grid">
+		                            <div class="address-left">
+		                                <span class="fa fa-phone" aria-hidden="true"></span>
+		                            </div>
+		                            <div class="address-right">
+		                                <h6>Phone Number</h6>
+		                                <p>+6283114738768</p>
+		                            </div>
+		                            <br><br>
+		                        </div>
+							</div>
+							<div class="address">
+		                        <div class="address-grid">
+		                            <div class="address-left">
+		                                <span class="fa fa-envelope" aria-hidden="true"></span>
+		                            </div>
+		                            <div class="address-right">
+		                                <h6>Email</h6>
+		                                <p>me@refojunior.com</p>
+		                            </div>
+		                            <br><br>
+		                        </div>
+							</div>
+							<div class="address">
+		                        <div class="address-grid">
+		                            <div class="address-left">
+		                                <span class="fa fa-map-marker" aria-hidden="true"></span>
+		                            </div>
+		                            <div class="address-right">
+		                                <h6>Location</h6>
+		                                <p>Jl. Gn. Andakasa GG. Cempaka 1/9 Denpasar, Bali</p>
+		                            </div>
+		                            <br><br><br>
+		                        </div>
+							</div>
+						</div>
+						
+						<div class="col-lg-6 col-md-6 col-xs-6 bg-contact">
+							<div class="contact-form">
+								<br>
+								<h2 style="font-weight:bold; color:white">Hubungi Sekarang : </h2>
+								Nama Lengkap : 
+								<input type="text" class="form-control">
+								Email : 
+								<input type="text" class="form-control">
+								Subject : 
+								<input type="text" class="form-control">
+								Pesan : 
+								<textarea class="form-control"></textarea>
+								<br>
+								<input type="submit" class="btn btn-lg btn-primary" value="Kirim">
+								<br>
+								<br>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="footer">
+							&copy; 2017 - Refo Junior
+						</div>
+					</div>
+					<br>	
+				</div>
+				
+			</div>
+		</div>
 	</div>
-
 	
-	
-	
-
-
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
