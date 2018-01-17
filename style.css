@@ -324,3 +324,15 @@ h2{
     text-decoration: none;
     background-color: #0f005d;
 }
+
+.article-all {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    text-align: center;
+    color:black;
+    height: auto;
+    font-size: 300%;
+    background-color:white;
+    transform: translate(-50%, -50%);
+}
