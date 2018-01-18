@@ -289,6 +289,62 @@ h2{
     }
 }
 
+@media only screen and (max-width: 361px) {
+    /* For phone: */
+    .address {
+    margin-top: 3em;
+    }
+
+    .address-left {
+        float: left;
+        width: 20%;
+        padding: 0.9em;
+        text-align: center;
+        background: #f44e42;
+    }
+
+    .address-left span.fa {
+        color: #FFFFFF;
+        font-size: 1.5em;
+    }
+
+    .address-right {
+        float: right;
+        width: 80%;
+        padding: 1.1em 2em;
+        background: #f5f4fa;
+    }
+
+    .address-right h6 {
+        color: #7d1509;
+        font-size: 1.1em;
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .address-right p {
+        margin: 1em 0 0 0;
+        font-size: .9em;
+    }
+
+    .address-right p a {
+        color: #777;
+        text-decoration: none;
+    }
+
+    .address-right p a:hover {
+        color: #ad1a0a;
+    }
+
+    .address-right p span {
+        display: block;
+        margin: .5em 0;
+    }
+    .address-grid {
+        margin: 1em 0;
+    }
+}
+
 .bg-contact {
     background-color:rgba(192,192,192,0.3);
 }
