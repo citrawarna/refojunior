@@ -1,308 +1,315 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>	Refo Junior - Website Developer</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Mukta+Vaani" rel="stylesheet">
-	<link rel="icon" href="img/icon.jpg">
-</head>
-<body>
-<div class="container-fluid">
-	<div class="row">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-		  <a class="navbar-brand" href="#">
-		    <img src="img/logo.jpg" height="50" alt="">
-		  </a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNav">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Portfolio</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Blog</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Contact</a>
-		      </li>
-		    </ul>
+<?php
+/**
+ * CodeIgniter
+ *
+ * An open source application development framework for PHP
+ *
+ * This content is released under the MIT License (MIT)
+ *
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @package	CodeIgniter
+ * @author	EllisLab Dev Team
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+ * @license	http://opensource.org/licenses/MIT	MIT License
+ * @link	https://codeigniter.com
+ * @since	Version 1.0.0
+ * @filesource
+ */
 
-		    <form class="form-inline my-2 my-lg-0">
-			    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-			</form>
-		  </div>
-		  
-		</nav>
-	</div>
+/*
+ *---------------------------------------------------------------
+ * APPLICATION ENVIRONMENT
+ *---------------------------------------------------------------
+ *
+ * You can load different configurations depending on your
+ * current environment. Setting the environment also influences
+ * things like logging and error reporting.
+ *
+ * This can be set to anything, but default usage is:
+ *
+ *     development
+ *     testing
+ *     production
+ *
+ * NOTE: If you change these, also change the error_reporting() code below
+ */
+	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 
-	<div class="row fit">
-		<img src="img/carousel.jpg" class="bg" width="100%" alt="img-home">
-		<div class="box-home box-home-t box-home-m">
-			<h1 align="center">Welcome to My Site</h1>
-			<hr>
-			<p class="text-home">Hi, my name is Refo Junior Farigia, a Website Developer based in Denpasar, Bali. I'm a student in STIMIK STIKOM Bali and i really love to make a website. 
-			So contact me now to get special price!</p>
-			<a href="#" class="btn btn-outline-primary"><i class="fa fa-envelope"></i> Contact Me</a>
-		</div>
-	</div>
-	<br><br>
+/*
+ *---------------------------------------------------------------
+ * ERROR REPORTING
+ *---------------------------------------------------------------
+ *
+ * Different environments will require different levels of error reporting.
+ * By default development will show errors but testing and live will hide them.
+ */
+switch (ENVIRONMENT)
+{
+	case 'development':
+		error_reporting(-1);
+		ini_set('display_errors', 1);
+	break;
 
-	<div class="row justify-content-center">
-		<h1>My Portfolio</h1>
-	</div>
-	<div class="container">
-		<div class="row">	
-			<div class="col-md-4 col-sm-4 col-lg-4">
-				<a href="#">
-					<img src="img/port-1.jpg" class="img-thumbnail" alt="">
-					<h4>Aplikasi Orderan Khusus Berbasis Web untuk Perusahaan</h4>
-				</a>
-			</div>
-			<div class="col-md-4 col-sm-4 col-lg-4">
-				<a href="#">
-					<img src="img/port-2.jpg" class="img-thumbnail" alt="">
-					<h4>Aplikasi Perpustakaan Berbasis Web</h4>
-				</a>
-			</div>
-			<div class="col-md-4 col-sm-4 col-lg-4">
-				<a href="#">
-					<img src="img/port-3.jpg" class="img-thumbnail" alt="">
-					<h4>Aplikasi Lamar Kerja Online Berbasis Web Untuk Perusahaan</h4>
-				</a>
-			</div>
-		</div>
-		<br>
-		<div class="row">	
-			<div class="col-md-4 col-sm-4 col-lg-4">
-				<a href="#">
-					<img src="img/port-4.jpg" class="img-thumbnail" alt="">
-					<h4>Website Dinamis Bali Massive Shuffle</h4>
-				</a>
-			</div>
-			<div class="col-md-4 col-sm-4 col-lg-4">
-				<a href="#">
-					<img src="img/port-5.jpg" class="img-thumbnail" alt="">
-					<h4>Website Dinamis Creavi Media</h4>
-				</a>
-			</div>
-			<div class="col-md-4 col-sm-4 col-lg-4">
-				<img src="img/soon.jpg" class="img-thumbnail" alt="">
-			</div>
-		</div>
-	</div>
-	<br><br>
-	
-	<div class="row relative">
-		<div class="skills">
-			<div class="container">
-				<br>
-				<div class="row justify-content-center">
-					<h1>My Skills</h1>
-				</div>
-				<br>
-				<div class="row">
-					<div class="col-md-6">
-						<h2>HTML</h2>
-						<div class="progress">
-						  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<h2>CSS</h2>
-						<div class="progress">
-						  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
-						</div>
-					</div>	
-				</div>
-				<br>
-				<div class="row">
-					<div class="col-md-6">
-						<h2>PHP</h2>
-						<div class="progress">
-						  <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<h2>Javascript</h2>
-						<div class="progress">
-						  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
-						</div>
-					</div>	
-				</div>
-				<br>
-				<div class="row">
-					<div class="col-md-6">
-						<h2>Multimedia</h2>
-						<div class="progress">
-						  <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<h2>Hardware and Networking</h2>
-						<div class="progress">
-						  <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
-						</div>
-					</div>	
-				</div>
-				<br><br>
-				<div class="row justify-content-center">
-					<p>i will always practice and learning about this, because this is my passion</p>
-				</div>
-			</div>
-		</div>		
-	</div>
-	<br><br>
+	case 'testing':
+	case 'production':
+		ini_set('display_errors', 0);
+		if (version_compare(PHP_VERSION, '5.3', '>='))
+		{
+			error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
+		}
+		else
+		{
+			error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_USER_NOTICE);
+		}
+	break;
 
-	<div class="row justify-content-center">
-		<h1>Recent Articles</h1>
-	</div>
-	<br>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-sm-4 col-lg-4">
-				<div class="blog">
-					<h2>Tips Sukses Interview</h2>
-					<img src="img/blog-1.jpg" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam facilis molestiae deleniti accusantium earum eligendi...</p>
-					&nbsp;&nbsp;
-					<a href="#" class="btn btn-primary">Read More</a>
-				</div>
-				<br>		
-			</div>
-			<div class="col-md-4 col-sm-4 col-lg-4">
-				<div class="blog">
-					<h2>Tips Sukses Interview</h2>
-					<img src="img/blog-1.jpg" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam facilis molestiae deleniti accusantium earum eligendi...</p>
-					&nbsp;&nbsp;
-					<a href="#" class="btn btn-primary">Read More</a>
-				</div>
-				<br>		
-			</div>
-			<div class="col-md-4 col-sm-4 col-lg-4">
-				<div class="blog">
-					<h2>Tips Sukses Interview</h2>
-					<img src="img/blog-1.jpg" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam facilis molestiae deleniti accusantium earum eligendi...</p>
-					&nbsp;&nbsp;
-					<a href="#" class="btn btn-primary">Read More</a>
-				</div>		
-			</div>
-		</div>
-		<div class="row justify-content-center">
-			<h4><a href="#">See More Articles</a></h4>
-		</div>
-	</div>
-	<br><br>
+	default:
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'The application environment is not set correctly.';
+		exit(1); // EXIT_ERROR
+}
 
-	<!-- contact -->
-	<div class="row">
-		<div class="container-fluid">
-		    <div class="row" id="contact">
-				<img src="img/contact-.jpg" class="img-contact" alt="bg-img">
-				<div class="col-lg-12 col-md-12 col-xs-12 absolute" >
-				      <br>
-				      <div class="row justify-content-center">
-				      	<h1 style="color:black; background:white">Contact Me</h1> 
-				      </div>
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-6 col-md-6 ">
-								
-			                        <div class="address-grid">
-			                            <div class="address-left">
-			                                <span class="fa fa-phone" aria-hidden="true"></span>
-			                            </div>
-			                            <div class="address-right">
-			                                <h6>Phone Number</h6>
-			                                <p>+6283114738768</p>
-			                            </div>
-			                            <br><br>
-			                       
-								</div>
-								<div class="address">
-			                        <div class="address-grid">
-			                            <div class="address-left">
-			                                <span class="fa fa-envelope" aria-hidden="true"></span>
-			                            </div>
-			                            <div class="address-right">
-			                                <h6>Email</h6>
-			                                <p>me@refojunior.com</p>
-			                            </div>
-			                            <br><br>
-			                        </div>
-								</div>
-								<div class="address">
-			                        <div class="address-grid">
-			                            <div class="address-left">
-			                                <span class="fa fa-map-marker" aria-hidden="true"></span>
-			                            </div>
-			                            <div class="address-right">
-			                                <h6>Location</h6>
-			                                <p>Jl. Gn. Andakasa GG. Cempaka 1/9 Denpasar, Bali</p>
-			                            </div>
-			                            <br><br><br>
-			                        </div>
-								</div>
-								<br>
-								<div class="socmed">
-									<h3>My Social Media</h3>
-									<div class="fb"><a href="#"><i class="fa fa-facebook-official"></i></a></div>
-									<div class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></div>
-									<div class="ig"><a href="#"><i class="fa fa-instagram"></i></a></div>
-									<div class="yt"><a href="#"><i class="fa fa-youtube"></i></a></div>
-									
-								</div>
-							</div>
-							
-							<div class="col-lg-6 col-md-6 col-xs-6 bg-contact">
-								<div class="contact-form">
-									<br>
-									<h3 style="background: white; width: 240px">Hubungi Sekarang : </h3>
-									<b>Nama Lengkap :</b>
-									<input type="text" class="form-control" placeholder="Nama Lengkap">
-									<b>Email :</b>
-									<input type="text" class="form-control" placeholder="Email">
-									<b>Subject :</b>  
-									<input type="text" class="form-control" placeholder="Subject">
-									<b>Pesan :</b>  
-									<textarea class="form-control" placeholder="Pesan"></textarea>
-									<br>
-									<input type="submit" class="btn btn-lg btn-primary" value="Kirim">
-									<br>
-									<br>
-								</div>
-							</div>
-						</div>
-					</div>	
-					<br>
-					<div class="row">
-						<div class="footer">
-							&copy; 2017 - Refo Junior
-						</div>
-					</div>
-					<br>	
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	
+/*
+ *---------------------------------------------------------------
+ * SYSTEM DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * This variable must contain the name of your "system" directory.
+ * Set the path if it is not in the same directory as this file.
+ */
+	$system_path = 'system';
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-</body>
-</html>
+/*
+ *---------------------------------------------------------------
+ * APPLICATION DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * If you want this front controller to use a different "application"
+ * directory than the default one you can set its name here. The directory
+ * can also be renamed or relocated anywhere on your server. If you do,
+ * use an absolute (full) server path.
+ * For more info please see the user guide:
+ *
+ * https://codeigniter.com/user_guide/general/managing_apps.html
+ *
+ * NO TRAILING SLASH!
+ */
+	$application_folder = 'application';
+
+/*
+ *---------------------------------------------------------------
+ * VIEW DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * If you want to move the view directory out of the application
+ * directory, set the path to it here. The directory can be renamed
+ * and relocated anywhere on your server. If blank, it will default
+ * to the standard location inside your application directory.
+ * If you do move this, use an absolute (full) server path.
+ *
+ * NO TRAILING SLASH!
+ */
+	$view_folder = '';
+
+
+/*
+ * --------------------------------------------------------------------
+ * DEFAULT CONTROLLER
+ * --------------------------------------------------------------------
+ *
+ * Normally you will set your default controller in the routes.php file.
+ * You can, however, force a custom routing by hard-coding a
+ * specific controller class/function here. For most applications, you
+ * WILL NOT set your routing here, but it's an option for those
+ * special instances where you might want to override the standard
+ * routing in a specific front controller that shares a common CI installation.
+ *
+ * IMPORTANT: If you set the routing here, NO OTHER controller will be
+ * callable. In essence, this preference limits your application to ONE
+ * specific controller. Leave the function name blank if you need
+ * to call functions dynamically via the URI.
+ *
+ * Un-comment the $routing array below to use this feature
+ */
+	// The directory name, relative to the "controllers" directory.  Leave blank
+	// if your controller is not in a sub-directory within the "controllers" one
+	// $routing['directory'] = '';
+
+	// The controller class file name.  Example:  mycontroller
+	// $routing['controller'] = '';
+
+	// The controller function you wish to be called.
+	// $routing['function']	= '';
+
+
+/*
+ * -------------------------------------------------------------------
+ *  CUSTOM CONFIG VALUES
+ * -------------------------------------------------------------------
+ *
+ * The $assign_to_config array below will be passed dynamically to the
+ * config class when initialized. This allows you to set custom config
+ * items or override any default config values found in the config.php file.
+ * This can be handy as it permits you to share one application between
+ * multiple front controller files, with each file containing different
+ * config values.
+ *
+ * Un-comment the $assign_to_config array below to use this feature
+ */
+	// $assign_to_config['name_of_config_item'] = 'value of config item';
+
+
+
+// --------------------------------------------------------------------
+// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
+// --------------------------------------------------------------------
+
+/*
+ * ---------------------------------------------------------------
+ *  Resolve the system path for increased reliability
+ * ---------------------------------------------------------------
+ */
+
+	// Set the current directory correctly for CLI requests
+	if (defined('STDIN'))
+	{
+		chdir(dirname(__FILE__));
+	}
+
+	if (($_temp = realpath($system_path)) !== FALSE)
+	{
+		$system_path = $_temp.DIRECTORY_SEPARATOR;
+	}
+	else
+	{
+		// Ensure there's a trailing slash
+		$system_path = strtr(
+			rtrim($system_path, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		).DIRECTORY_SEPARATOR;
+	}
+
+	// Is the system path correct?
+	if ( ! is_dir($system_path))
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your system folder path does not appear to be set correctly. Please open the following file and correct this: '.pathinfo(__FILE__, PATHINFO_BASENAME);
+		exit(3); // EXIT_CONFIG
+	}
+
+/*
+ * -------------------------------------------------------------------
+ *  Now that we know the path, set the main path constants
+ * -------------------------------------------------------------------
+ */
+	// The name of THIS file
+	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+
+	// Path to the system directory
+	define('BASEPATH', $system_path);
+
+	// Path to the front controller (this file) directory
+	define('FCPATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
+
+	// Name of the "system" directory
+	define('SYSDIR', basename(BASEPATH));
+
+	// The path to the "application" directory
+	if (is_dir($application_folder))
+	{
+		if (($_temp = realpath($application_folder)) !== FALSE)
+		{
+			$application_folder = $_temp;
+		}
+		else
+		{
+			$application_folder = strtr(
+				rtrim($application_folder, '/\\'),
+				'/\\',
+				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+			);
+		}
+	}
+	elseif (is_dir(BASEPATH.$application_folder.DIRECTORY_SEPARATOR))
+	{
+		$application_folder = BASEPATH.strtr(
+			trim($application_folder, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		);
+	}
+	else
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your application folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
+		exit(3); // EXIT_CONFIG
+	}
+
+	define('APPPATH', $application_folder.DIRECTORY_SEPARATOR);
+
+	// The path to the "views" directory
+	if ( ! isset($view_folder[0]) && is_dir(APPPATH.'views'.DIRECTORY_SEPARATOR))
+	{
+		$view_folder = APPPATH.'views';
+	}
+	elseif (is_dir($view_folder))
+	{
+		if (($_temp = realpath($view_folder)) !== FALSE)
+		{
+			$view_folder = $_temp;
+		}
+		else
+		{
+			$view_folder = strtr(
+				rtrim($view_folder, '/\\'),
+				'/\\',
+				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+			);
+		}
+	}
+	elseif (is_dir(APPPATH.$view_folder.DIRECTORY_SEPARATOR))
+	{
+		$view_folder = APPPATH.strtr(
+			trim($view_folder, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		);
+	}
+	else
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your view folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
+		exit(3); // EXIT_CONFIG
+	}
+
+	define('VIEWPATH', $view_folder.DIRECTORY_SEPARATOR);
+
+/*
+ * --------------------------------------------------------------------
+ * LOAD THE BOOTSTRAP FILE
+ * --------------------------------------------------------------------
+ *
+ * And away we go...
+ */
+require_once BASEPATH.'core/CodeIgniter.php';

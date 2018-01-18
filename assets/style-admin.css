@@ -1,0 +1,43 @@
+.menu-kiri {
+	width: 200px;
+	height:540px;
+	float: left;
+	position: fixed;
+}
+
+.list-menu {
+	background-color: #edf2f9;
+	
+}
+
+.list-menu a{
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color:black;
+	display: block;
+	
+}
+
+.list-menu a:hover {
+	color:grey;
+	text-decoration: none;
+	background-color: #d3e4ff;
+}
+
+.active {
+	color:grey;
+	text-decoration: none;
+	background-color: #d3e4ff;
+}
+
+.content {
+	margin-left: 210px;
+	margin-top: 20px;
+	display: inline-block;
+	position: absolute;
+}
+
+.footer {
+	
+}

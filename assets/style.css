@@ -131,7 +131,7 @@ h2{
 
 .skills {
     width:100%;
-    background-image:url('img/skills.jpg');
+    background-image:url('../img/skills.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -397,4 +397,54 @@ h2{
 .yt a:hover {
     font-size: 50px;
     color:red;
+}
+
+.login-content {
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(7, 7, 7, 0.08);
+    padding: 50px 30px;
+}
+.login-title > h4 {
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.login-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.login-form form input {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    height: 40px;
+}
+.login-form form .checkbox-remember > input {
+    display: inline-block;
+    float: left;
+    height: 15px;
+    margin-bottom: 0;
+    width: 15px;
+}
+.login-form form .checkbox-remember > label {
+    padding-left: 10px;
+}
+.login-form form .checkbox-remember > a {
+    float: right;
+}
+.login-btn {
+    background-color: #333;
+    border: medium none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 100%;
+    transition: all .3s ease 0s;
+}
+.login-btn:hover {
+    background-color: #000;
 }
