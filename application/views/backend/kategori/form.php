@@ -1,4 +1,4 @@
-<h2><?= $ket ?> Data</h2>
+<h2><?= $ket ?> Data Kategori</h2>
 
 <?= form_open($form_action) ?>
 	Nama Kategori :
