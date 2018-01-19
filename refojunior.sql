@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 19 Jan 2018 pada 09.06
--- Versi Server: 10.1.10-MariaDB
--- PHP Version: 7.0.3
+-- Generation Time: Jan 19, 2018 at 03:36 PM
+-- Server version: 10.1.16-MariaDB
+-- PHP Version: 7.0.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `artikel`
+-- Table structure for table `artikel`
 --
 
 CREATE TABLE `artikel` (
@@ -39,29 +39,38 @@ CREATE TABLE `artikel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `artikel`
+-- Dumping data for table `artikel`
 --
 
 INSERT INTO `artikel` (`id_artikel`, `judul`, `link`, `cover`, `isi`, `id_kategori`, `tanggal`, `meta`, `keywords`) VALUES
 (1, 'Tips Sukses Interview', 'tips-sukses-interview', 'blog-1.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, modi, autem error pariatur consectetur quasi laborum delectus nisi ullam veritatis itaque mollitia eligendi sapiente iusto obcaecati eos reprehenderit nobis hic.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, modi, autem error pariatur consectetur quasi laborum delectus nisi ullam veritatis itaque mollitia eligendi sapiente iusto obcaecati eos reprehenderit nobis hic.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, modi, autem error pariatur consectetur quasi laborum delectus nisi ullam veritatis itaque mollitia eligendi sapiente iusto obcaecati eos reprehenderit nobis hic.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, modi, autem error pariatur consectetur quasi laborum delectus nisi ullam veritatis itaque mollitia eligendi sapiente iusto obcaecati eos reprehenderit nobis hic.', 1, '2018-01-19', 'Interview adalah hal yang wajib dikuasai oleh sebagian orang, bagaimana tidak? interview dapat dijadikan penilaian untuk diterima atau tidaknya seorang calon karyawan. Maka dari itu berikut tips and trick sukses interview versi saya', 'interview, tips sukses interview, cara bisa interview, bagaimana interview yang baik'),
-(24, 'Rich Chigga', 'rich-chigga', '23347643_129143697798702_4757562508166823936_n.jpg', '<p>j</p>\r\n', 2, '2018-01-19', 'Rich chigga adalah rapper asal indonesia', 'cw1'),
-(25, 'Harus nih diisi?', 'harus-di-isi', 'ayana2.jpg', '<p>harus diisi</p>\r\n', 2, '2018-01-19', 'harus diisi', 'harus diisi');
+(24, 'Rich Brian', 'rich-brian', '60868702.jpg', '<p>j</p>\r\n', 2, '2018-01-19', 'Rich chigga adalah rapper asal indonesia', 'cw1'),
+(25, 'Harus nih diisi? Edit', 'harus-di-isi-edit', 'ayana2.jpg', '<p>harus diisi dulu guys</p>\r\n', 2, '2018-01-19', 'harus diisi', 'harus diisi');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `gudang_gambar`
+-- Table structure for table `gudang_gambar`
 --
 
 CREATE TABLE `gudang_gambar` (
   `id_gambar` int(11) NOT NULL,
-  `nama_gambar` varchar(255) NOT NULL
+  `nama_gambar` varchar(255) NOT NULL,
+  `judul_artikel` varchar(100) NOT NULL,
+  `tanggal` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `gudang_gambar`
+--
+
+INSERT INTO `gudang_gambar` (`id_gambar`, `nama_gambar`, `judul_artikel`, `tanggal`) VALUES
+(1, 'contoh.jpg', '', '0000-00-00');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kategori`
+-- Table structure for table `kategori`
 --
 
 CREATE TABLE `kategori` (
@@ -71,7 +80,7 @@ CREATE TABLE `kategori` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kategori`
+-- Dumping data for table `kategori`
 --
 
 INSERT INTO `kategori` (`id_kategori`, `nama_kategori`, `keterangan`) VALUES
@@ -83,21 +92,31 @@ INSERT INTO `kategori` (`id_kategori`, `nama_kategori`, `keterangan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `portfolio`
+-- Table structure for table `portfolio`
 --
 
 CREATE TABLE `portfolio` (
   `id_port` int(11) NOT NULL,
+  `tanggal` date NOT NULL,
   `nama_sistem` varchar(255) NOT NULL,
+  `link` varchar(100) NOT NULL,
   `gambar` varchar(255) NOT NULL,
   `isi` mediumtext NOT NULL,
   `id_kategori` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `portfolio`
+--
+
+INSERT INTO `portfolio` (`id_port`, `tanggal`, `nama_sistem`, `link`, `gambar`, `isi`, `id_kategori`) VALUES
+(1, '2018-01-19', 'Sistem Orderan Khusus Berbasis Web Untuk Perusahaan', 'sistem-orderan-khusus', 'port-1.jpg', 'This is a system that i created for a company, this system is using codeigniter and bootstrap.', 1),
+(6, '2018-01-19', 'Aplikasi Perpustakaan Berbasis Web', 'aplikasi-perpustakaan-berbasis-web', 'port-2.jpg', '<p>aplikasi perpus</p>\r\n', 2);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -107,7 +126,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id_user`, `username`, `password`) VALUES
@@ -155,12 +174,12 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `artikel`
 --
 ALTER TABLE `artikel`
-  MODIFY `id_artikel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id_artikel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT for table `gudang_gambar`
 --
 ALTER TABLE `gudang_gambar`
-  MODIFY `id_gambar` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_gambar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `kategori`
 --
@@ -170,7 +189,7 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT for table `portfolio`
 --
 ALTER TABLE `portfolio`
-  MODIFY `id_port` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_port` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `user`
 --
