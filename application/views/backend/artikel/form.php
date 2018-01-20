@@ -28,6 +28,10 @@
 	Keywords Google SEO
 	<?= form_input('keywords', $input->keywords, ['class' => 'form-control']); ?>
 	<?= form_error('keywords', '<p class="alert alert-danger">', '</p>') ?>
+
+	Score
+	<?= form_input('score', $input->score, ['class' => 'form-control']); ?>
+	<?= form_error('score', '<p class="alert alert-danger">', '</p>') ?>
 	
 	Gambar Cover 
 	<?= form_upload('cover', $input->cover, ['class' => 'form-control']) ?>

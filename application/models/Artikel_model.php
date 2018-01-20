@@ -16,6 +16,7 @@ class Artikel_model extends CI_model
 			'meta' => '',
 			'keywords' => '',
 			'cover' => '',
+			'score' => '',
 
 		];
 	}

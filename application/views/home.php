@@ -127,38 +127,22 @@
 		<br>
 		<div class="container">
 			<div class="row">
+			<?php foreach($artikel as $row) { ?>
 				<div class="col-md-4 col-lg-4">
 					<div class="blog">
-						<h2>Tips Sukses Interview</h2>
-						<img src="img/blog-1.jpg" alt="">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam facilis molestiae deleniti accusantium earum eligendi...</p>
+						<h2><?= $row->judul ?></h2>
+						<img src="<?= base_url('gudang/'.$row->cover) ?>" alt="">
+						<p><?= strip_tags(substr($row->isi, 0, 150)); ?>...</p>
 						&nbsp;&nbsp;
-						<a href="#" class="btn btn-primary">Read More</a>
+						<a href="<?= base_url('articles/read/'.$row->link) ?>" class="btn btn-primary">Read More</a>
 					</div>
 					<br>		
 				</div>
-				<div class="col-md-4  col-lg-4">
-					<div class="blog">
-						<h2>Tips Sukses Interview</h2>
-						<img src="img/blog-1.jpg" alt="">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam facilis molestiae deleniti accusantium earum eligendi...</p>
-						&nbsp;&nbsp;
-						<a href="#" class="btn btn-primary">Read More</a>
-					</div>
-					<br>		
-				</div>
-				<div class="col-md-4 col-lg-4">
-					<div class="blog">
-						<h2>Tips Sukses Interview</h2>
-						<img src="img/blog-1.jpg" alt="">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam facilis molestiae deleniti accusantium earum eligendi...</p>
-						&nbsp;&nbsp;
-						<a href="#" class="btn btn-primary">Read More</a>
-					</div>		
-				</div>
+				<?php } ?>
+			
 			</div>
 			<div class="row justify-content-center">
-				<h4><a href="#">See More Articles</a></h4>
+				<h4><a href="<?= base_url('articles') ?>">See More Articles</a></h4>
 			</div>
 		</div>
 		<br><br>

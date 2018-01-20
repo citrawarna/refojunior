@@ -2,7 +2,7 @@
 		<div class="row">
 			<div class="container-fluid">
 			    <div class="row" id="contact">
-					<img src="img/contact-.jpg" class="img-contact" alt="bg-img">
+					<img src="<?= base_url('img/contact-.jpg') ?>" class="img-contact" alt="bg-img">
 					<div class="col-lg-12 col-md-12 col-xs-12 absolute" >
 					      <br>
 					      <div class="row justify-content-center">
